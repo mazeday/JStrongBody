@@ -8,10 +8,14 @@ import lombok.Setter;
 import java.util.Date;
 
 @AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 public class Calendar {
-    private final Date startDay = new Date();
+    private final Date startDay;
 
+    private int date;
+
+    public Calendar() {
+        this.startDay = new Date();
+    }
 }

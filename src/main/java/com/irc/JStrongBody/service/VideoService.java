@@ -17,19 +17,12 @@ public class VideoService {
         return video;
     }
 
-    public String deleteVideos(String stringId) {
-
-        int id = stringToInt(stringId);
+    public String deleteVideos(int id) {
 
         return "sucsess delete";
     }
 
-    private int stringToInt(String id){
-
-        return Integer.parseInt (id);
-    }
-
-    public Tag getVideos(String id) {
+    public Tag getVideos(int id) {
         return null;
     }
 }

@@ -18,13 +18,13 @@ public class VideosController {
         return service.createVideos(video);
     }
 
-    @GetMapping("/videos{id}")
-    public Tag getVideos(@PathVariable(name = "id") String id){
+    @GetMapping("/videos/{id}")
+    public Tag getVideos(@PathVariable(name = "id") int id){
         return service.getVideos(id);
     };
 
     @DeleteMapping(value = "/videos/{id}")
-    public String delete(@PathVariable(name = "id") String id){
+    public String delete(@PathVariable(name = "id") int id){
 
         return service.deleteVideos(id);
     }

@@ -12,9 +12,4 @@ public class VideoListController {
 
     private VideoListService service;
 
-    @PostMapping("/videoList")
-    public VideoList create(@RequestBody Tag tag){
-
-        return service.createVideoList(tag);
-    }
 }

@@ -16,13 +16,13 @@ public class TagsController {
         return service.createTag(tag);
     };
 
-    @GetMapping("/tags{id}")
-    public Tag getTag(@PathVariable(name = "id") String id){
-        return service.getTag(id);
+    @GetMapping("/tags/{id}")
+    public Tag getTag(@PathVariable(name = "id") int id){
+        return service.getTag(String.valueOf(id));
     };
 
     @DeleteMapping(value = "/tags/{id}")
-    public String delete(@PathVariable(name = "id") String id){
+    public String delete(@PathVariable(name = "id") int id){
 
         return service.deleteTag(id);
     }

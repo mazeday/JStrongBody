@@ -16,8 +16,7 @@ public class TagsService {
         return tag;
     }
 
-    public String deleteTag(String stringId) {
-        int id = stringToInt(stringId);
+    public String deleteTag(int id) {
         return null;
     }
 
