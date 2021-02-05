@@ -1,9 +1,6 @@
 package com.irc.JStrongBody.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -14,10 +11,12 @@ import java.util.List;
 public class Video {
 
     private int id;
-    private List<Teg> tegs;
+
+    private List<Tag> tegs;
+
     private String link;
 
-    public Video(List<Teg> tegs, String link) {
+    public Video(List<Tag> tegs, String link) {
         this.tegs = tegs;
         this.link = link;
     }

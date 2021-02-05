@@ -2,17 +2,19 @@ package com.irc.JStrongBody.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Setter
 @Getter
-public class Teg {
+public class Tag {
 
     private int id;
-    private TegEnum tegEnum;
+    private String name;
 
-    public Teg(TegEnum teg) {
-        this.tegEnum = teg;
+    public Tag(String name) {
+        this.name = name;
     }
 }

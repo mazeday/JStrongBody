@@ -4,16 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.web.bind.annotation.GetMapping;
 
-import java.util.List;
+import java.util.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
 @Getter
-public class VideoList {
-
-    private List<Video> videos;
+@Setter
+public class Calendar {
+    private final Date startDay = new Date();
 
 }

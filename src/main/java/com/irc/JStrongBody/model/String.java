@@ -1,5 +1,5 @@
 package com.irc.JStrongBody.model;
 
-public enum TegEnum {
+public enum String {
     WARM_UP, POWER, EASY, HARD
 }
